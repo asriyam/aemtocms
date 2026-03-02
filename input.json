@@ -1,0 +1,71 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:title": "Home Page",
+    "pageTitle": "Welcome to My Site",
+    "navTitle": "Home",
+    "cq:template": "/conf/mysite/settings/wcm/templates/page-template",
+    "cq:tags": ["mysite:category/home", "mysite:featured"],
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "hero_banner": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "mysite/components/content/hero-banner",
+        "headline": "Transform Your Digital Presence",
+        "subheadline": "Build amazing experiences with our AI-powered CMS",
+        "backgroundImage": "/content/dam/mysite/images/hero-bg.jpg",
+        "ctaLink": "/products",
+        "ctaText": "Get Started"
+      },
+      "richtext_1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "mysite/components/content/richtext",
+        "text": "<p>This is <strong>rich content</strong> with HTML markup.</p>"
+      },
+      "card_list": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "mysite/components/content/card-list",
+        "title": "Featured Cards",
+        "item0": {
+          "title": "Card 1",
+          "description": "First card description",
+          "icon": "/content/dam/mysite/icons/icon1.svg"
+        },
+        "item1": {
+          "title": "Card 2",
+          "description": "Second card description",
+          "icon": "/content/dam/mysite/icons/icon2.svg"
+        },
+        "item2": {
+          "title": "Card 3",
+          "description": "Third card description",
+          "icon": "/content/dam/mysite/icons/icon3.svg"
+        }
+      },
+      "promo": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "mysite/components/content/promo",
+        "title": "Special Offer",
+        "description": "Limited time promotion",
+        "promoImage": "/content/dam/mysite/images/promo.jpg",
+        "promoLink": "/offers"
+      },
+      "teaser": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "mysite/components/content/teaser",
+        "title": "Learn More",
+        "content": "Explore our services and see how we can help",
+        "item0": {
+          "label": "Action 1",
+          "link": "/action1"
+        },
+        "item1": {
+          "label": "Action 2",
+          "link": "/action2"
+        }
+      }
+    }
+  }
+}

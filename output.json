@@ -1,0 +1,83 @@
+{
+  "Id": "home",
+  "key": "Home Page",
+  "DynamicProperties": {
+    "title": "Home Page",
+    "pageTitle": "Welcome to My Site",
+    "navTitle": "Home",
+    "template": "page-template",
+    "tags": ["category/home", "featured"],
+    "Webparts": [
+      {
+        "type": "hero-banner",
+        "order": 1,
+        "data": {
+          "headline": "Transform Your Digital Presence",
+          "subheadline": "Build amazing experiences with our AI-powered CMS",
+          "backgroundImage": "/assets/images/hero-bg.jpg",
+          "ctaLink": "/products",
+          "ctaText": "Get Started"
+        }
+      },
+      {
+        "type": "richtext",
+        "order": 2,
+        "data": {
+          "text": "<p>This is <strong>rich content</strong> with HTML markup.</p>"
+        }
+      },
+      {
+        "type": "card-list",
+        "order": 3,
+        "data": {
+          "title": "Featured Cards",
+          "items": [
+            {
+              "title": "Card 1",
+              "description": "First card description",
+              "icon": "/assets/icons/icon1.svg"
+            },
+            {
+              "title": "Card 2",
+              "description": "Second card description",
+              "icon": "/assets/icons/icon2.svg"
+            },
+            {
+              "title": "Card 3",
+              "description": "Third card description",
+              "icon": "/assets/icons/icon3.svg"
+            }
+          ]
+        }
+      },
+      {
+        "type": "promo",
+        "order": 4,
+        "data": {
+          "title": "Special Offer",
+          "description": "Limited time promotion",
+          "promoImage": "/assets/images/promo.jpg",
+          "promoLink": "/offers"
+        }
+      },
+      {
+        "type": "teaser",
+        "order": 5,
+        "data": {
+          "title": "Learn More",
+          "content": "Explore our services and see how we can help",
+          "actions": [
+            {
+              "label": "Action 1",
+              "link": "/action1"
+            },
+            {
+              "label": "Action 2",
+              "link": "/action2"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

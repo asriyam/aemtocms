@@ -1,0 +1,15 @@
+{
+  "name": "aem-cms-poc",
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/pipeline.js",
+    "page1": "node src/pipeline.js input.json generated/output.json generated/page1.html",
+    "page2": "node src/pipeline.js input2.json generated/output2.json generated/page2.html"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "node-fetch": "^3.3.2",
+    "fs-extra": "^11.2.0"
+  }
+}

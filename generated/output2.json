@@ -1,0 +1,86 @@
+{
+  "Id": "home",
+  "key": "Services Page",
+  "DynamicProperties": {
+    "title": "Services Page",
+    "pageTitle": "Our Professional Services",
+    "navTitle": "Services",
+    "template": "page-template",
+    "tags": [
+      "category/services",
+      "popular"
+    ],
+    "Webparts": [
+      {
+        "type": "hero-banner",
+        "order": 1,
+        "data": {
+          "headline": "Professional Solutions for Enterprise",
+          "subheadline": "Streamline your workflow with industry-leading services",
+          "backgroundImage": "/assets/images/services-hero.jpg",
+          "ctaLink": "/contact-us",
+          "ctaText": "Schedule a Demo"
+        }
+      },
+      {
+        "type": "richtext",
+        "order": 2,
+        "data": {
+          "text": "<p>Our team of experts delivers <em>transformative solutions</em> tailored to your business needs.</p>"
+        }
+      },
+      {
+        "type": "card-list",
+        "order": 3,
+        "data": {
+          "title": "Core Services",
+          "items": [
+            {
+              "title": "Consulting",
+              "description": "Strategic advisory and digital transformation",
+              "icon": "/assets/icons/consulting.svg"
+            },
+            {
+              "title": "Development",
+              "description": "Custom software and enterprise applications",
+              "icon": "/assets/icons/development.svg"
+            },
+            {
+              "title": "Support",
+              "description": "24/7 technical support and maintenance",
+              "icon": "/assets/icons/support.svg"
+            }
+          ]
+        }
+      },
+      {
+        "type": "promo",
+        "order": 4,
+        "data": {
+          "title": "Early Adopter Program",
+          "description": "Get 30% off your first 3 months",
+          "promoImage": "/assets/images/early-adopter.jpg",
+          "promoLink": "/signup"
+        }
+      },
+      {
+        "type": "teaser",
+        "order": 5,
+        "data": {
+          "title": "Ready to Transform?",
+          "content": "Partner with us to accelerate your digital journey",
+          "actions": [
+            {
+              "label": "View Case Studies",
+              "link": "/case-studies"
+            },
+            {
+              "label": "Download Whitepaper",
+              "link": "/resources/whitepaper"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

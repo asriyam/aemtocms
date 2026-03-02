@@ -1,0 +1,47 @@
+<style>
+.hero-banner {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: url('{{backgroundImage}}');
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
+  padding: var(--space-xl) 0;
+  text-align: center;
+}
+
+.hero-banner__headline {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-lg);
+}
+
+.hero-banner__subheadline {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+  margin-bottom: var(--space-xl);
+}
+
+.hero-banner__cta-button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: var(--space-md) var(--space-2xl);
+  text-transform: uppercase;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+}
+
+.hero-banner__cta-button:hover {
+  background-color: var(--color-secondary);
+}
+</style>
+
+<div class="hero-banner">
+  <h1 class="hero-banner__headline">{{headline}}</h1>
+  {{{subheadline}}}
+  <a href="{{ctaLink}}" class="hero-banner__cta-button">{{ctaText}}</a>
+</div>

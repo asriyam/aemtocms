@@ -1,0 +1,31 @@
+<style>
+  .richtext__container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--space-md) 0;
+    font-family: var(--font-family-base);
+    color: var(--color-text);
+  }
+  
+  .richtext__content {
+    line-height: 1.6;
+    font-size: var(--font-size-base);
+  }
+
+  .richtext__content p {
+    margin-bottom: var(--space-sm);
+  }
+
+  .richtext__content a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .richtext__content a:hover {
+    text-decoration: underline;
+  }
+</style>
+<div class="richtext__container">
+  <div class="richtext__content" {{{text}}}>
+  </div>
+</div>

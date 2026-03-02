@@ -1,0 +1,43 @@
+<style scoped>
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--space-lg);
+    padding: var(--space-md);
+  }
+  
+  .card-list__item {
+    background-color: var(--color-bg-alt);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .card-list__item--icon img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-list__item--title {
+    font-size: var(--font-size-lg);
+    color: var(--color-primary);
+    margin-top: var(--space-md);
+  }
+  
+  .card-list__item--description {
+    font-size: var(--font-size-base);
+    color: var(--color-text-light);
+    margin: var(--space-sm) 0;
+  }
+</style>
+
+<div class="card-list">
+  {{#each items}}
+    <div class="card-list__item card-list__item--icon">
+      <img src="{{this.icon}}" alt="{{this.title}}">
+      <h3 class="card-list__item--title">{{this.title}}</h3>
+      <p class="card-list__item--description">{{{this.description}}}</p>
+    </div>
+  {{/each}}
+</div>

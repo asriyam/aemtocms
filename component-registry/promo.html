@@ -1,0 +1,70 @@
+<style scoped>
+.promo__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
+  background-color: var(--color-bg-alt);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+}
+
+.promo__container img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.promo__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 var(--space-md) 0 0;
+}
+
+.promo__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.promo__description {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-md);
+}
+
+.promo__link {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  transition: background-color 0.3s ease;
+}
+
+.promo__link:hover {
+  background-color: var(--color-secondary);
+}
+</style>
+
+<div class="promo__container">
+  <img src="{{{promoImage}}}" alt="Promotion Image">
+  <div class="promo__content">
+    {{#if title}}
+      <h2 class="promo__title">{{title}}</h2>
+    {{/if}}
+    {{#if description}}
+      <p class="promo__description">{{{description}}}</p>
+    {{/if}}
+    {{#if promoLink}}
+      <a href="{{promoLink}}" class="promo__link">Learn More</a>
+    {{/if}}
+  </div>
+</div>

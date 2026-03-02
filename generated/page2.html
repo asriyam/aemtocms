@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Professional Services</title>
+  <link rel="stylesheet" href="../design-tokens.css">
+  <style>
+    body {
+      font-family: var(--font-family-base);
+      color: var(--color-text);
+      background-color: var(--color-bg);
+      margin: 0;
+      padding: 0;
+    }
+    .page-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    <style>
+    .hero-banner {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      background-image: url('/assets/images/services-hero.jpg');
+      background-size: cover;
+      background-position: center;
+      color: var(--color-white);
+      padding: var(--space-xl) 0;
+      text-align: center;
+    }
+    
+    .hero-banner__headline {
+      font-size: var(--font-size-3xl);
+      font-weight: var(--font-weight-bold);
+      margin-bottom: var(--space-lg);
+    }
+    
+    .hero-banner__subheadline {
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-normal);
+      margin-bottom: var(--space-xl);
+    }
+    
+    .hero-banner__cta-button {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+      border: none;
+      padding: var(--space-md) var(--space-2xl);
+      text-transform: uppercase;
+      font-size: var(--font-size-base);
+      font-weight: var(--font-weight-bold);
+      cursor: pointer;
+      border-radius: var(--border-radius);
+    }
+    
+    .hero-banner__cta-button:hover {
+      background-color: var(--color-secondary);
+    }
+    </style>
+    
+    <div class="hero-banner">
+      <h1 class="hero-banner__headline">Professional Solutions for Enterprise</h1>
+      Streamline your workflow with industry-leading services
+      <a href="/contact-us" class="hero-banner__cta-button">Schedule a Demo</a>
+    </div>
+    <style>
+      .richtext__container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: var(--space-md) 0;
+        font-family: var(--font-family-base);
+        color: var(--color-text);
+      }
+      
+      .richtext__content {
+        line-height: 1.6;
+        font-size: var(--font-size-base);
+      }
+    
+      .richtext__content p {
+        margin-bottom: var(--space-sm);
+      }
+    
+      .richtext__content a {
+        color: var(--color-primary);
+        text-decoration: none;
+      }
+    
+      .richtext__content a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <div class="richtext__container">
+      <div class="richtext__content" <p>Our team of experts delivers <em>transformative solutions</em> tailored to your business needs.</p>>
+      </div>
+    </div>
+    <style scoped>
+      .card-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: var(--space-lg);
+        padding: var(--space-md);
+      }
+      
+      .card-list__item {
+        background-color: var(--color-bg-alt);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-sm);
+        overflow: hidden;
+        text-align: center;
+      }
+      
+      .card-list__item--icon img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .card-list__item--title {
+        font-size: var(--font-size-lg);
+        color: var(--color-primary);
+        margin-top: var(--space-md);
+      }
+      
+      .card-list__item--description {
+        font-size: var(--font-size-base);
+        color: var(--color-text-light);
+        margin: var(--space-sm) 0;
+      }
+    </style>
+    
+    <div class="card-list">
+        <div class="card-list__item card-list__item--icon">
+          <img src="/assets/icons/consulting.svg" alt="Consulting">
+          <h3 class="card-list__item--title">Consulting</h3>
+          <p class="card-list__item--description">Strategic advisory and digital transformation</p>
+        </div>
+        <div class="card-list__item card-list__item--icon">
+          <img src="/assets/icons/development.svg" alt="Development">
+          <h3 class="card-list__item--title">Development</h3>
+          <p class="card-list__item--description">Custom software and enterprise applications</p>
+        </div>
+        <div class="card-list__item card-list__item--icon">
+          <img src="/assets/icons/support.svg" alt="Support">
+          <h3 class="card-list__item--title">Support</h3>
+          <p class="card-list__item--description">24/7 technical support and maintenance</p>
+        </div>
+    </div>
+    <style scoped>
+    .promo__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-lg);
+      padding: var(--space-md) var(--space-lg);
+      background-color: var(--color-bg-alt);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .promo__container img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: var(--border-radius);
+      border-bottom-left-radius: var(--border-radius);
+    }
+    
+    .promo__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 var(--space-md) 0 0;
+    }
+    
+    .promo__title {
+      font-size: var(--font-size-2xl);
+      font-weight: var(--font-weight-bold);
+      color: var(--color-primary);
+      margin-bottom: var(--space-sm);
+    }
+    
+    .promo__description {
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-normal);
+      color: var(--color-text-light);
+      margin-bottom: var(--space-md);
+    }
+    
+    .promo__link {
+      display: inline-block;
+      padding: var(--space-sm) var(--space-md);
+      background-color: var(--color-primary);
+      color: var(--color-white);
+      text-decoration: none;
+      border-radius: var(--border-radius);
+      font-size: var(--font-size-base);
+      font-weight: var(--font-weight-bold);
+      transition: background-color 0.3s ease;
+    }
+    
+    .promo__link:hover {
+      background-color: var(--color-secondary);
+    }
+    </style>
+    
+    <div class="promo__container">
+      <img src="/assets/images/early-adopter.jpg" alt="Promotion Image">
+      <div class="promo__content">
+          <h2 class="promo__title">Early Adopter Program</h2>
+          <p class="promo__description">Get 30% off your first 3 months</p>
+          <a href="/signup" class="promo__link">Learn More</a>
+      </div>
+    </div>
+    <style scoped>
+      .teaser {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: var(--space-md);
+        padding: var(--space-lg) var(--space-sm);
+        background-color: var(--color-bg-alt);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-sm);
+        max-width: var(--max-width);
+        margin: 0 auto;
+      }
+    
+      .teaser__title {
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-primary);
+        text-align: center;
+      }
+    
+      .teaser__content {
+        font-size: var(--font-size-base);
+        color: var(--color-text-light);
+        text-align: center;
+      }
+    
+      .teaser__actions {
+        display: flex;
+        justify-content: space-around;
+      }
+    
+      .teaser__action {
+        padding: var(--space-sm) var(--space-md);
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        border-radius: var(--border-radius);
+        text-decoration: none;
+        font-size: var(--font-size-base);
+        font-weight: var(--font-weight-bold);
+        transition: background-color 0.3s ease;
+      }
+    
+      .teaser__action:hover {
+        background-color: var(--color-secondary);
+      }
+    </style>
+    
+    <div class="teaser">
+      <h2 class="teaser__title">Ready to Transform?</h2>
+      <p class="teaser__content">Partner with us to accelerate your digital journey</p>
+      <div class="teaser__actions">
+          <a href="/case-studies" class="teaser__action">View Case Studies</a>
+          <a href="/resources/whitepaper" class="teaser__action">Download Whitepaper</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

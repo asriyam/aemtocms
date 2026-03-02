@@ -1,0 +1,71 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:title": "Services Page",
+    "pageTitle": "Our Professional Services",
+    "navTitle": "Services",
+    "cq:template": "/conf/mysite/settings/wcm/templates/page-template",
+    "cq:tags": ["mysite:category/services", "mysite:popular"],
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "hero_banner": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "mysite/components/content/hero-banner",
+        "headline": "Professional Solutions for Enterprise",
+        "subheadline": "Streamline your workflow with industry-leading services",
+        "backgroundImage": "/content/dam/mysite/images/services-hero.jpg",
+        "ctaLink": "/contact-us",
+        "ctaText": "Schedule a Demo"
+      },
+      "richtext_intro": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "mysite/components/content/richtext",
+        "text": "<p>Our team of experts delivers <em>transformative solutions</em> tailored to your business needs.</p>"
+      },
+      "services_list": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "mysite/components/content/card-list",
+        "title": "Core Services",
+        "item0": {
+          "title": "Consulting",
+          "description": "Strategic advisory and digital transformation",
+          "icon": "/content/dam/mysite/icons/consulting.svg"
+        },
+        "item1": {
+          "title": "Development",
+          "description": "Custom software and enterprise applications",
+          "icon": "/content/dam/mysite/icons/development.svg"
+        },
+        "item2": {
+          "title": "Support",
+          "description": "24/7 technical support and maintenance",
+          "icon": "/content/dam/mysite/icons/support.svg"
+        }
+      },
+      "early_bird": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "mysite/components/content/promo",
+        "title": "Early Adopter Program",
+        "description": "Get 30% off your first 3 months",
+        "promoImage": "/content/dam/mysite/images/early-adopter.jpg",
+        "promoLink": "/signup"
+      },
+      "footer_teaser": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "mysite/components/content/teaser",
+        "title": "Ready to Transform?",
+        "content": "Partner with us to accelerate your digital journey",
+        "item0": {
+          "label": "View Case Studies",
+          "link": "/case-studies"
+        },
+        "item1": {
+          "label": "Download Whitepaper",
+          "link": "/resources/whitepaper"
+        }
+      }
+    }
+  }
+}
